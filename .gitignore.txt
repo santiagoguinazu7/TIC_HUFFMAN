@@ -1,0 +1,15 @@
+*.exe
+*.o
+*.obj
+*.out
+*.huf
+*.dhu
+*.depend
+*.layout
+*.cbp
+bin/
+obj/
+Debug/
+Release/
+.DS_Store
+Thumbs.db
