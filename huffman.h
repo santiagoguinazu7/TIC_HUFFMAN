@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 #define MAX_CODE_LEN 256
 
 // Nodo del arbol de Huffman
@@ -48,5 +49,11 @@ void liberarTablaFrecuencias(TablaFrecuencias *t);
 
 void verArchivos(const char *original, const char *recuperado);
 void verEstadistica(const char *original, const char *comprimido, const char *descomprimido);
+void imprimirB(unsigned char c);
+int* Hamming(int cadena[], int modulo, int limite, int *arr_out);
+void introducir_errores(int *cadena_h, int modulo, int largo_total, int *errores);
+int* decodificarHamming(int cadena_H[], int modulo, int largo_total, int *largo_info,int cantidad_de_caracteres_originales);
+void generarArchivoDEX(int *cadena_H, int modulo, int largo_total, char *nombre_salida);
+void guardarInfoRecuperada(int *info_recuperada, int largo_info, char *nombre_archivo);
 
 #endif
